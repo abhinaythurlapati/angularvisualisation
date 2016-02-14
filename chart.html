@@ -1,0 +1,25 @@
+<head>
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="http://dimplejs.org/dist/dimple.v2.1.6.min.js"></script>
+</head>
+<body>
+  <script type="text/javascript">
+    var svg = dimple.newSvg("body", 1500, 600);
+    var data = [
+      { "Session":"Morning", "type":"TotalTxWifi","data":2000},
+      { "Session":"Morning", "type":"TotalRxWifi","data":3000},
+      { "Session":"Evening", "type":"TotalTxWifi","data":1000},
+      { "Session":"Evening", "type":"TotalRxWifi","data":4000},
+      { "Session":"Night", "type":"TotalTxWifi","data":4000},
+      { "Session":"Night", "type":"TotalRxWifi","data":8000},
+      { "Session":"Early Morning", "type":"TotalTxWifi","data":3000},
+      { "Session":"Early Morning", "type":"TotalRxWifi","data":4500},
+    ];
+    var chart = new dimple.chart(svg, data);
+    chart.addCategoryAxis("x", ["Session","type"]);
+    chart.addMeasureAxis("y", "data");
+    chart.addSeries("type", dimple.plot.bar);
+    chart.addLegend(600, 10, 510, 20, "right");
+    chart.draw();
+  </script>
+</body>

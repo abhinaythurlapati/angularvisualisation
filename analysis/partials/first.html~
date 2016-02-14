@@ -1,0 +1,30 @@
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <h3 style="color: white">Data Usage Analyser</h3>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid" style="margin-top: 100px">
+  <div class="row" style="margin-left: 50px">
+	<div class="col-md-1"></div>	
+	<div class="col-md-5">
+		Enter Start Date & Time:  <input ng-model="strtDate" datetime-picker date-format="yyyy-MM-dd" date-only /> 
+	</div>
+	<div class="col-md-5"></div>	
+	<div class="col-md-5">
+		Enter End Date & Time:  <input ng-model="endDate" datetime-picker date-format="yyyy-MM-dd" date-only /> 
+
+	</div>
+  </div>
+  <br/><br/>  <br/><br/>
+  
+  <div class="row">
+	<!--<div class="col-md-3"></div>-->	
+	<div style="margin-left: 600px">
+		<h2><a href="#/first/{{strtDate}}/{{endDate}}" class="btn btn-primary btn-lg">Submit</a></h2>
+	</div>
+  </div>
+</div>

@@ -1,0 +1,38 @@
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <h3 style="color: white">Data Usage Analyser</h3>
+    </div>
+  </div>
+</nav>
+<div class="row">
+	<div class="col-md-2">	
+		Start Date: {{strtDate}}
+	</div>	
+	<div class="col-md-2">	
+		End Date: {{endDate}}
+	</div>	
+</div>
+<br><br>
+<div class = "row">
+	<div class="col-md-2">
+		Morning: 6:00 AM-11:00 AM
+	</div>
+	<div class="col-md-2">
+		Afternoon: 11:00 AM-4:00 PM
+	</div>
+	<div class="col-md-2">
+		Evening: 4:00 PM-8:00 PM
+	</div>
+	<div class="col-md-2">
+		Night: 8:00 PM-1:00 AM
+	</div>
+	<div class="col-md-2">
+		Early Morning: 1:00 AM-6:00 AM
+	</div>
+</div>
+
+<div class="demo">
+
+</div>
+<p>{{data}}</p>

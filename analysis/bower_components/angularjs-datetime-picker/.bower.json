@@ -1,0 +1,38 @@
+{
+  "name": "angularjs-datetime-picker",
+  "main": "angularjs-datetime-picker.js",
+  "version": "0.1.18",
+  "homepage": "https://github.com/kineticsocial/angularjs-datetime-picker",
+  "authors": [
+    "Allen Kim <allen.kim@kineticsocial.com>"
+  ],
+  "description": "Datepicker/Datetime picker for your INPUT tag",
+  "keywords": [
+    "Angular",
+    "Javascript",
+    "Date",
+    "Datetime",
+    "UI"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.4"
+  },
+  "_release": "0.1.18",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.1.18",
+    "commit": "47c7cacebec63edcdf2e50320528770be402db4c"
+  },
+  "_source": "git://github.com/kineticsocial/angularjs-datetime-picker.git",
+  "_target": "~0.1.18",
+  "_originalSource": "angularjs-datetime-picker",
+  "_direct": true
+}
