@@ -126,73 +126,7 @@ dateCtrl.controller('nextCtrl', ['$scope', '$routeParams', '$http', '$window',
     chart.draw();
 
 	}
-	 //angular.element(document.querySelector('[ng-controller="nextCtrl"]')).scope().data;
-	/*$http({method: 'POST',
-			url: 'http://172.16.80.15:8888/query',
-	}).then(function successCallback(response) {
-		console.log("success");
-		$scope.data = response;
-    // this callback will be called asynchronously
-    // when the response is available
-  	}, function errorCallback(response) {
-	console.log("error");
-	$scope.data = response;
-    // called asynchronously if an error occurs
-    // or server returns response with an error status.
-  	});*/
-
-	/*$http.post('http://172.16.81.199:8888/query',"Hello")
-            .success(function (response) {
-                 $scope.data = response;
-			  console.log("success");
-            })
-            .error(function (data, status, headers, config) {
-			  $scope.data = config;
-			  console.log("error");
-            });*/
-	
-	
-	
-
-	//$scope.data = call1(date1, date2);
+	 
+}]);
 
 	
-     /*function call1(sDate, eDate) {
-              return "{'strtDate':'"+sDate+"', 'endDate':'"+eDate+"'}";
-          }*/
-    }]);
-
-	/*.directive('foo', function(){
-    return {
-
-        restrict: 'AEC',
-        link: function(scope, elem, attrs){
-		debugger;
-            //Use scope.totals here
-		var svg = dimple.newSvg("div.demo", 1500, 600);
-		var data = scope.data;
-    /*var data = [
-      { "Session":"Morning", "type":"TotalTxWifi","data":2000},
-      { "Session":"Morning", "type":"TotalRxWifi","data":3000},
-      { "Session":"Evening", "type":"TotalTxWifi","data":1000},
-      { "Session":"Evening", "type":"TotalRxWifi","data":4000},
-      { "Session":"Night", "type":"TotalTxWifi","data":4000},
-      { "Session":"Night", "type":"TotalRxWifi","data":8000},
-      { "Session":"Early Morning", "type":"TotalTxWifi","data":3000},
-      { "Session":"Early Morning", "type":"TotalRxWifi","data":4500},
-    ];
-
-	//var data = angular.element(document.querySelector('[ng-controller="nextCtrl"]')).scope().data;
-	//debugger;
-	console.log("Hello");
-	console.log(data);
-    var chart = new dimple.chart(svg, data);
-    chart.addCategoryAxis("x", ["Session","type"]);
-    chart.addMeasureAxis("y", "data");
-    chart.addSeries("type", dimple.plot.bar);
-    chart.addLegend(600, 10, 510, 20, "right");
-    chart.draw();
-		
-        }
-    };
-});*/
