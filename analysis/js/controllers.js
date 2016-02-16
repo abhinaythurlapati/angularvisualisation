@@ -85,7 +85,7 @@ dateCtrl.controller('nextCtrl', ['$scope', '$routeParams', '$http', '$window',
 
 	$http({
 	    method: 'POST',
-	    url: 'http://192.168.10.56:8888/query',
+	    url: 'http://54.165.108.35:8888/query',
 	    data: angular.toJson(dateToJson),
 	    headers: {
 	        'Content-Type': 'text/plain',

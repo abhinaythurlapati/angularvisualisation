@@ -1,0 +1,11 @@
+
+
+
+change the ip address in app/controller.js to the url of node server
+
+create the http server by
+
+http-server -a 0.0.0.0 -p 7000
+
+access the following url in the browser
+localhost:port/analysis
